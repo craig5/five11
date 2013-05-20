@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page_data.title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+<body>
+  <header>
+    <div class='container-fluid'>
+      <h1 class='logo'><a href="{{ url_for('home') }}">{{ page_data.title }}</a></h1>
+      <strong><nav>
+        <ul class='menu'>
+          <li><a href="{{ url_for('show_mv_office') }}">Mountain View</a></li>
+          <li><a href="{{ url_for('show_svale_office') }}">Sunnyvale</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </nav></strong>
+    </div>
+  </header>
+  <div class='container'>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

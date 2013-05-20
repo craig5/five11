@@ -1,0 +1,174 @@
+22ndstreetstation:
+  link_path: /stations/22ndstreetstation.html
+  north_order: 27
+  south_order: 1
+  title: 22nd Street
+  zone: '1'
+bayshorestation:
+  link_path: /stations/bayshorestation.html
+  north_order: 26
+  south_order: 2
+  title: Bayshore
+  zone: '1'
+belmontstation:
+  link_path: /stations/belmontstation.html
+  north_order: 18
+  south_order: 10
+  title: Belmont
+  zone: '2'
+blossomhillstation:
+  link_path: /stations/blossomhillstation.html
+  north_order: 3
+  south_order: 25
+  title: Blossom Hill
+  zone: '5'
+burlingamestation:
+  link_path: /stations/burlingamestation.html
+  north_order: 22
+  south_order: 6
+  title: Burlingame
+  zone: '2'
+californiaavenuestation:
+  link_path: /stations/californiaavenuestation.html
+  north_order: 13
+  south_order: 15
+  title: California Ave
+  zone: '3'
+capitolstation:
+  link_path: /stations/capitolstation.html
+  north_order: 4
+  south_order: 24
+  title: Capitol
+  zone: '5'
+collegeparkstation:
+  link_path: /stations/collegeparkstation.html
+  north_order: 7
+  south_order: 21
+  title: CollegePark
+  zone: '4'
+gilroystation:
+  link_path: /stations/gilroystation.html
+  north_order: 0
+  south_order: 28
+  title: Gilroy
+  zone: '6'
+haywardparkstation:
+  link_path: /stations/haywardparkstation.html
+  north_order: 20
+  south_order: 8
+  title: Hayward Park
+  zone: '2'
+hillsdalestation:
+  link_path: /stations/hillsdalestation.html
+  north_order: 19
+  south_order: 9
+  title: Hillsdale
+  zone: '2'
+lawrencestation:
+  link_path: /stations/lawrencestation.html
+  north_order: 9
+  south_order: 19
+  title: Lawrence
+  zone: '4'
+menloparkstation:
+  link_path: /stations/menloparkstation.html
+  north_order: 15
+  south_order: 13
+  title: Menlo Park
+  zone: '3'
+millbraetransitcenter:
+  link_path: /stations/millbraetransitcenter.html
+  north_order: 23
+  south_order: 5
+  title: Millbrae
+  zone: '2'
+morganhillstation:
+  link_path: /stations/morganhillstation.html
+  north_order: 2
+  south_order: 26
+  title: Morgan Hill
+  zone: '6'
+mountainviewstation:
+  link_path: /stations/mountainviewstation.html
+  north_order: 11
+  south_order: 17
+  title: MountainView
+  zone: '3'
+paloaltostation:
+  link_path: /stations/paloaltostation.html
+  north_order: 14
+  south_order: 14
+  title: Palo Alto
+  zone: '3'
+redwoodcitystation:
+  link_path: /stations/redwoodcitystation.html
+  north_order: 16
+  south_order: 12
+  title: Redwood City
+  zone: '2'
+sanantoniostation:
+  link_path: /stations/sanantoniostation.html
+  north_order: 12
+  south_order: 16
+  title: SanAntonio
+  zone: '3'
+sanbrunostation:
+  link_path: /stations/sanbrunostation.html
+  north_order: 24
+  south_order: 4
+  title: San Bruno
+  zone: '1'
+sancarlosstation:
+  link_path: /stations/sancarlosstation.html
+  north_order: 17
+  south_order: 11
+  title: San Carlos
+  zone: '2'
+sanfranciscostation:
+  link_path: /stations/sanfranciscostation.html
+  north_order: 28
+  south_order: 0
+  title: San Francisco
+  zone: '1'
+sanjosediridonstation:
+  link_path: /stations/sanjosediridonstation.html
+  north_order: 6
+  south_order: 22
+  title: San Jose
+  zone: '4'
+sanmartinstation:
+  link_path: /stations/sanmartinstation.html
+  north_order: 1
+  south_order: 27
+  title: San Martin
+  zone: '6'
+sanmateostation:
+  link_path: /stations/sanmateostation.html
+  north_order: 21
+  south_order: 7
+  title: San Mateo
+  zone: '2'
+santaclarastation:
+  link_path: /stations/santaclarastation.html
+  north_order: 8
+  south_order: 20
+  title: SantaClara
+  zone: '4'
+southsanfranciscostation:
+  link_path: /stations/southsanfranciscostation.html
+  north_order: 25
+  south_order: 3
+  title: So. San Francisco
+  zone: '1'
+sunnyvalestation:
+  link_path: /stations/sunnyvalestation.html
+  north_order: 10
+  south_order: 18
+  title: Sunnyvale
+  zone: '3'
+tamienstation:
+  link_path: /stations/tamienstation.html
+  north_order: 5
+  south_order: 23
+  title: Tamien
+  zone: '4'
