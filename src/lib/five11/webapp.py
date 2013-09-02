@@ -1,3 +1,4 @@
+# vim: set expandtab tabstop=4 shiftwidth=4 autoindent smartindent:
 #
 import logging
 import os
@@ -10,7 +11,8 @@ _BASE_DIR = five11.constants._BASE_DIR
 _TEMPLATE_DIR = five11.constants._TEMPLATE_DIR
 _STATIC_DIR = five11.constants._STATIC_DIR
 _DATA_DIR = five11.constants._DATA_DIR
-app = flask.Flask(__name__, template_folder=_TEMPLATE_DIR, static_folder=_STATIC_DIR)
+app = flask.Flask(__name__, template_folder=_TEMPLATE_DIR,
+        static_folder=_STATIC_DIR)
 # XXX include config stuff
 ##app.config.from_object(__name__)
 #print _TEMPLATE_DIR

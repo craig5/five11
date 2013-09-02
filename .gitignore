@@ -1,7 +1,11 @@
+# ptyon bytecode
 *.py[cod]
 
 # C extensions
 *.so
+
+# vim files
+*.swp
 
 # Packages
 *.egg
@@ -10,12 +14,10 @@ dist
 build
 eggs
 parts
-bin
 var
 sdist
 develop-eggs
 .installed.cfg
-lib
 lib64
 
 # Installer logs
