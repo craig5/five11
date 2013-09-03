@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class='jumbo'>
+    <h3>{{ page_data.title }}</h3>
+    <ul>
+    {% for shuttle in page_data.shuttles -%}
+      <li>{{ shuttle.am}}</li>
+    {% endfor -%}
+    </ul>
+  </div>
+{% endblock %}
