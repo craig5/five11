@@ -7,10 +7,10 @@ import jinja2
 import five11.data
 import five11.constants
 
-_BASE_DIR = five11.constants._BASE_DIR
-_TEMPLATE_DIR = five11.constants._TEMPLATE_DIR
-_STATIC_DIR = five11.constants._STATIC_DIR
-_DATA_DIR = five11.constants._DATA_DIR
+_BASE_DIR       = five11.constants._BASE_DIR
+_TEMPLATE_DIR   = five11.constants._TEMPLATE_DIR
+_STATIC_DIR     = five11.constants._STATIC_DIR
+_DATA_DIR       = five11.constants._DATA_DIR
 app = flask.Flask(__name__, template_folder=_TEMPLATE_DIR,
         static_folder=_STATIC_DIR)
 # XXX include config stuff
@@ -21,29 +21,41 @@ datamgr = five11.data.DataManager()
 trains_data = datamgr.read_train_data()
 app.logger.debug("Train data read...")
 
-_PAGE_TITLE = 'LI Five11'
+shuttle_data = five11.data.ShuttleData(app.logger)
+
+_APP_TITLE = 'LI Five11'
+app_data = dict()
+app_data['title'] = _APP_TITLE
 page_data = dict()
-page_data['title'] = _PAGE_TITLE
 
 @app.route('/')
 def home():
-  return flask.render_template('home.html', page_data=page_data)
+    return flask.render_template('home.html', app_data=app_data,
+            page_data=page_data)
 
 @app.route('/office/mv')
 def show_mv_office():
-  return flask.render_template('station.html', page_data=page_data)
+    page_data['title'] = 'Mountain View Shuttles'
+    page_data['shuttles'] = shuttle_data.fetch_office('mv')
+    return flask.render_template('office.html', app_data=app_data,
+            page_data=page_data)
 
 @app.route('/office/svale')
 def show_svale_office():
-  return flask.render_template('station.html', page_data=page_data)
+    page_data['title'] = 'Sunnyvale Shuttles'
+    page_data['shuttles'] = shuttle_data.fetch_office('svale')
+    return flask.render_template('office.html', app_data=app_data,
+            page_data=page_data)
 
 @app.route('/about')
 def about():
-  return flask.render_template('about.html', page_data=page_data)
+    return flask.render_template('about.html', app_data=app_data,
+            page_data=page_data)
 
 @app.errorhandler(404)
 def page_not_found(error):
-  return flask.render_template('404.html', page_data=page_data), 404
+    return flask.render_template('404.html', app_data=app_data,
+            page_data=page_data), 404
 
 
 # End of file.

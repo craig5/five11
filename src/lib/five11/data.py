@@ -5,7 +5,8 @@ import logging
 import os
 import sys
 # third party
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
+import BeautifulSoup
 import urllib
 import yaml
 # custom
@@ -283,4 +284,18 @@ class DataManager(object):
                     h.setLevel(logging.DEBUG)
                 self.logger.debug("Resetting logging level to debug.")
 
+
+class ShuttleData(object):
+
+    def fetch_office(self, office_id):
+        data_file = os.path.join(_DATA_DIR, 'shuttles.yaml')
+        with open(data_file, 'r') as fp:
+            yaml_data = yaml.load(fp)
+        shuttles = dict()
+        if office_id in yaml_data:
+            shuttles = yaml_data[office_id]
+        return shuttles
+
+    def __init__(self, logger):
+        self.logger = logger
 # End of file.
